@@ -19,20 +19,19 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/txlongitude"
         app:layout_constraintEnd_toStartOf="@+id/edlatitude"
-        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintVertical_bias="0.62" />
 
     <EditText
         android:id="@+id/edlatitude"
         android:layout_width="220dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,8 +39,8 @@
         android:id="@+id/txlongitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
         android:text="Longitude:"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/btconsulta"
@@ -54,7 +53,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toEndOf="@+id/txlongitude"
@@ -65,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
         android:onClick="acaoBotao"
         android:text="CONSULTAR CLIMA"
@@ -76,15 +75,35 @@
 
     <ImageView
         android:id="@+id/imclima"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="259dp"
+        android:layout_height="221dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btconsulta"
-        app:srcCompat="@drawable/rain" />
+        app:layout_constraintVertical_bias="0.906"
+        app:srcCompat="@drawable/cavanhaclimalogo" />
+
+    <TextView
+        android:id="@+id/txlocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imclima"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btconsulta"
+        app:layout_constraintVertical_bias="0.607" />
+
 </android.support.constraint.ConstraintLayout>
